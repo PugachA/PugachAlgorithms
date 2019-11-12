@@ -19,10 +19,8 @@ namespace ConsoleTest
 
             timing.StartTime();
             stpWatch.Start();
-            for(int i = 0; i < 500000; i++)
-            {
-                rnd.Next();
-            }
+
+            Search.SearchSimple(new int[] { 1, 2, 3, 4, 5, 6 }, 6);
 
             stpWatch.Stop();
             timing.StopTime();
